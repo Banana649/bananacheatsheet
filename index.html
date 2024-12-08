@@ -2,6 +2,15 @@
 <html>
   <head>
     <link href="styles.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Poiret+One&family=Prata&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <title> Banana Cheatsheet </title>
 
   </head>
@@ -9,32 +18,60 @@
 
 	<body>
 	<div class="header" id="top">
+	
+	<a href="#"><img src="image/banana.jpeg"></a> Cheatsheet for Banana
 
-<a href="#begin"><img src="image/banana.jpeg"></a> Cheatsheet for Banana</br>
-
-<h2 class="button"> <a href="#begin"> How to Begin </a> </h2>	
-<h2 class="button"> <a href="#html"> HTML </a> </h2>
-<h2 class="button"> <a href="#cssstyle"> CSS </a> </h2>
-<h2 class="button"> <a href="#table"> Table </a> </h2>
-<h2 class="button"> <a href="#font"> Font</a> </h2>
-<h2 class="button"> <a href="#cmd-line"> Command Line</a> </h2>
+	<h2 class="button"> <a href="#begin"> How to Begin </a> </h2>
+	<h2 class="button"> <a href="#cmd-line"> Command Line</a> </h2>	
+	<h2 class="button"> <a href="#html"> HTML </a> </h2>
+	<h2 class="button"> <a href="#cssstyle"> CSS </a> </h2>
+	<h2 class="button"> <a href="#content-sizing"> Content Sizing </a> </h2>
+	<h2 class="button"> <a href="#text-styling"> Text Styling </a> </h2>
+	<h2 class="button"> <a href="#color"> Color </a> </h2>
+	<h2 class="button"> <a href="#table"> Table </a> </h2>
+	<h2 class="button"> <a href="#font"> Font</a> </h2>
+	<h2 class="button"> <a href="#link-style"> Link Style</a> </h2>
+	<h2 class="button"> <a href="#box-shadow"> Box Shadow </a> </h2>
+	<h2 class="button"> <a href="#breadcrumb"> Breadcrumb </a> </h2>
 	</div>
 
+<main class="main">
+<h1>This is a cheatsheet created by Anna for Anna Banana.</br>
+This cheatsheet was created as a practice website, </br>
+as well as to keep a note on all Anna Banana knowledge of CSS on a website.</br>
+In a way this is a notebook or Anna Banana.</h1>
+
+</main>
 
 <!--beginning section-->
 
 	<div class="begin" id="begin">
 		<section>
-	<h1> in the beginning </h1>
+	<h1> Let there be light </h1>
 		<h2>Starting off a HTML document:</h2>
 		<p>
 		[!DOCTYPE html] </br>
 		[html]</br>
-		[head]</br>
-		link to css stylesheet and relevant google font here</br>
-		[/head]</br>
-		[body]</br>
-		where header, body, footer and various attributes goes here</br>
+		[head]</br></br>
+
+		<b>[!--add title here like this: --]</b></br>
+		[title] Banana Cheatsheet [/title]</br></br>
+
+		
+		<b>[!--link to css stylesheet like this: --]</b></br>
+		[link href="styles.css" rel="stylesheet"]</br></br>
+
+		<b>[!--embed google font here, like this: --]</b></br>
+		[link rel="preconnect" href="https://fonts.googleapis.com"]</br>
+		<b>[!--learn more at <a href="#font"> Font</a> --]</b></br></br>
+
+
+		[/head]</br></br>
+		[body]</br></br>
+
+		<b>where header, body, footer and various attributes goes here</br>
+		more about this at <a href="#html"> HTML </a></b></br></br>
+
 		[/body]</br>
 		[/html]</br></br>
 		*replace [ and ] with < and >
@@ -44,11 +81,78 @@
 	</div>
 
 
+<!--command line section-->
+
+	<div class="cmd-line" id="cmd-line">
+		<section>
+	<h1> Command line </h1>
+	<h2> Command line is a text interface for the computer's operating system. To access the command line, we use the terminal. </h2>
+
+	<table>
+		<thead>
+		 <tr>
+		  <th> element </th>
+		  <th>explanation</th>
+		 </tr>
+		</thead>
+		<tbody>
+
+		 <tr>
+		  <td>$ ls </td>
+		  <td>(LS) the terminal would display our current directory’s files and directories</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ pwd </td>
+		  <td>Print working directory - show where you are in the file system</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ cd </td>
+		  <td>Change directory</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ cd ..</td>
+		  <td>the argument . . stands for the directory above the current working directory.</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ cd ../..</td>
+		  <td>move the directory 2 path above</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ cd ../2014</td>
+		  <td>move to above, then to folder 2014</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ mkdir media </td>
+		  <td>make directory / create new directory named media inside working directory</td>
+		 </tr>
+
+		 <tr>
+		  <td>$ touch keyboard.txt </td>
+		  <td>creates new file (in this case keyboard.txt) inside working directory</td>
+		 </tr>
+
+
+		</tbody>
+	</table>
+
+		</section>
+
+	</div>
+
+
+
+
 <!--HTML element section-->
 
 	<div class="HTML-elements" id="html">
 		<section>
-	<h1>other HTML elements</h1>
+	<h1>Other HTML elements</h1>
 	<h2>HTML can also contain the following</h2>
 
 	<table>
@@ -186,7 +290,7 @@
 
 
 	<section class="basic-css">
-	<h1> styling on CSS </h1>
+	<h1> Styling on CSS </h1>
 	<h2>Basic CSS</h2>
 	<h3>Basic CSS elements</h3>
 	
@@ -271,13 +375,16 @@
 
 		 <tr>
 		  <td>Pseudo Class </td>
-		  <td>A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. For example p:hover. </br> Value:
+		  <td>A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. For example p:hover. </br>
+			Value:
 			<ul>
 			 <li>:focus, </li>
 			 <li>:visited, </li>
 			 <li>:disabled, </li>
 			 <li>:active </li>
-			</ul></td>
+			</ul>
+			More on this on <a href="#link-style">Link Styling</a> 
+		  </td>
 		  <td>	p:hover {</br>
 			  background-color: lime;</br>
 			}
@@ -292,9 +399,14 @@
 		</p>
 
 	</section>
+	</div>
 
-	<section class="content-sizing">
-	<h2>Content Sizing</h2>
+<!--content sizing-->
+
+	<div class="content-sizing" id="content-sizing">
+		<section>
+
+	<h1>Content sizing</h1>
 	<h3>Content can be arranged with the following elements on CSS</h3>
 	
 	<table>
@@ -486,9 +598,41 @@
 
 	</section>
 
-	<section class="text-styling">
+	<section class="tips-and-tricks">
 
-	<h2>Text Styling</h2>
+		<h2> Tips and Tricks </h2>
+
+		<h3> how to make header stay on top</h3>
+		<p>
+	width: 100%;</br>
+	position: fixed;</br>
+	top: 0;</br>
+	left: 0;</br>
+	padding: 20px;</br>
+	text-align: center;
+		</p>
+
+		<h3> to make footer stay on bottom </h3>
+
+		<p>
+	width: 100%;</br>
+	position: fixed;</br>
+	bottom: 0;</br>
+	left: 0;</br>
+		</p>
+
+	</section>
+
+
+	</div>
+
+<!--text styling section-->
+
+	<div class="text-styling" id="text-styling">
+
+	<section>
+
+	<h1>Text styling</h1>
 	<h3>Text can be styled the following way</h3>
 	
 	<table>
@@ -592,20 +736,27 @@
 		  <td>line-height: 1.4;</td>
 		 </tr>
 
+		 <tr>
+		  <td> Text decoration </td>
+		  <td>To change text to underline</td>
+		  <td>text-decoration: underline;</td>
+		 </tr>
+
+
 		</tbody>
 
 	</table>
 
 
 	</section>
+	</div>
 
+<!--color section-->
 
+	<div class="color" id="color">
 
-	<section class="color">
-
-
-		<h2> Colors </h2>
-
+		<section>
+		<h1> Colors </h1>
 
 	<table>
 		<thead>
@@ -704,7 +855,7 @@ color: transparent;</td>
 
 		 <tr>
 		  <td> Link styling </td>
-		  <td>Link containing Florence will have the attributes</td>
+		  <td>Link containing Florence will have the attributes.</br>more styling tips at <a href="#link-style">Link Styling</a></td>
 		  <td>
 		a[href*='florence'] {</br>
 		color: lightgreen;</br>
@@ -724,30 +875,6 @@ color: transparent;</td>
 
 	</section>
 
-	<section class="tips-and-tricks">
-
-		<h2> Tips and Tricks </h2>
-
-		<h3> how to make header stay on top</h3>
-		<p>
-	width: 100%;</br>
-	position: fixed;</br>
-	top: 0;</br>
-	left: 0;</br>
-	padding: 20px;</br>
-	text-align: center;
-		</p>
-
-		<h3> to make footer stay on bottom </h3>
-
-		<p>
-	width: 100%;</br>
-	position: fixed;</br>
-	bottom: 0;</br>
-	left: 0;</br>
-		</p>
-
-	</section>
 
 	</div>
 
@@ -756,7 +883,7 @@ color: transparent;</td>
 
 	<div class="table" id="table">
 		<section>
-	<h1> table </h1>
+	<h1> Table </h1>
 	<h2> table has to contain the following (on HTML) </h2>
 		<p>
 	[table]</br>
@@ -799,19 +926,19 @@ color: transparent;</td>
 		</section>
 
 		<section>
-	<h1> table style </h1>
+	<h1> Table style </h1>
 	<h2> table styled at css with the following examples: </h2>
 		<p>
-table { </br>
-	border: 3px solid black;</br>
-	border-collapse: collapse;</br>
-	font-family: Monospace;</br>
-}</br></br>
+		table { </br>
+		border: 3px solid black;</br>
+		border-collapse: collapse; <b>/*to collapse border or else there will be 2 borders*/</b></br>
+		font-family: Monospace;</br>
+		}</br></br>
 
-th, td {</br>
-	border: 3px solid black;</br>
-	padding: 8px;</br>
-}</br>
+		th, td {</br>
+		border: 3px solid black;</br>
+		padding: 8px;</br>
+		}</br>
 		</p>
 		</section>
 
@@ -873,12 +1000,166 @@ th, td {</br>
 
 	</div>
 
-<!--command line section-->
+<!--link style section-->
 
-	<div class="cmd-line" id="cmd-line">
+	<div class="link-style" id="link-style">
 		<section>
-	<h1> Command line </h1>
-	<h2> Command line is a text interface for the computer's operating system. To access the command line, we use the terminal. </h2>
+	<h1> Link styling </h1>
+
+	<table>
+		<thead>
+		 <tr>
+		  <th> element </th>
+		  <th>explanation</th>
+		  <th>variations</th>
+		 </tr>
+		</thead>
+
+		<tbody>
+
+
+		 <tr>
+		  <td> Link - Tooltip and title attribute </td>
+		  <td>When user hover their cursor over the link, a text will appear in a small box near the cursor. </br>
+			EG: Hover over <a href="#link" title="this will link to link styling">here</a></td>
+		  <td>
+		<strong>HTML</strong></br></br>
+		[a href="link" title="text that appear in small box when hover"] text that will change to a link [/a]
+		 </tr>
+
+		 <tr>
+		  <td> Hover </td>
+		  <td> Using CSS Pseudo class :hover attribute</td>
+		  <td>
+		<strong>CSS</strong></br></br>
+		a {</br>
+		 color: blue;</br>
+		}</br></br>
+		a:hover {</br>
+		 color: orange;</br>
+		}</br></br></td>
+		 </tr>
+
+		 <tr>
+		  <td> Cursor </td>
+		  <td> to change user curser when hovering on a link</td>
+		  <td>
+		<strong>CSS</strong></br></br>
+		a {</br>
+		 cursor: pointer;</br>
+		}</br></br></td>
+		 </tr>
+
+		 <tr>
+		  <td> Pseudo class </td>
+		  <td> has to be this cascading sequence
+			<ul>
+			 <li>:link - unvisited link </li>
+			 <li>:visited - visited link </li>
+			 <li>:hover - hover on link </li>
+			 <li>:active - active link </li>
+			</ul>
+		  </td>
+		  <td>
+		<strong>CSS</strong></br></br>
+		a:visited {</br>
+		 color: yellow;</br>
+		}</br></br></td>
+		 </tr>
+
+		 <tr>
+		  <td rowspan="3"> Buttons </td>
+		  <td> 
+			<button class="button"> <a href="#link-style"> Standard Buttons </a></button>
+		  </td>
+		  <td> <strong>HTML</strong></br></br>
+			[button class="button"] Standard Buttons [/button]</br></br>
+			<strong>CSS</strong></br></br>
+			.link-style.button {</br>
+			  height: 50px;</br>
+			  width: 200px;</br>
+			  cursor: pointer;</br>
+			  font-weight: 600;</br>
+			  font-size: 15px;</br>
+			}
+			 </td>
+		 </tr>
+
+		 <tr>
+		  <td> 
+			<button class="skeuomorphic"> <a href="#link-style"> Skeuomorphic </a></button>
+		  </td>
+		  <td> <strong>HTML</strong></br></br>
+			[button class="skeuomorphic"] Skeuomorphic [/button]</br></br>
+			<strong>CSS</strong></br></br>
+				.skeuomorphic {</br>
+				  border: 2px solid #0c960c;</br>
+				  border-radius: 5px;</br>
+				  color: #F8F8F8;</br>
+				  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;</br>
+				  background: linear-gradient(#1D1, #0ebc0e);</br>
+				  text-shadow: 0 -2px #0c960c;</br>
+				}</br></br>
+
+				.skeuomorphic:hover {</br>
+				  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;</br>
+				  background: #0ebc0e;</br>
+				  background: linear-gradient(#0ebc0e, #0c960c);</br>
+				  border-color: #064f06;</br>
+				}</br></br>
+
+				.skeuomorphic:active {</br>
+				  margin-top: 2px;</br>
+				  margin-bottom: -2px;</br>
+				  box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;</br>
+				  background: #0c960c;</br>
+				  background: linear-gradient(#0c960c, #0ebc0e);</br>
+				}</td>
+		 </tr>
+
+		 <tr>
+		  <td> 
+			<button class="flat"> <a href="#link-style"> Flat </a></button>
+		  </td>
+		  <td><strong>HTML</strong></br></br>
+			[button class="flat"] Flat [/button]</br></br>
+			<strong>CSS</strong></br></br>
+			 .flat {</br>
+			  background-color: #1D1;</br>
+			  color: #fff;</br>
+			  border: 2px solid #12dd23;</br>
+			  border-radius: 10px;</br>
+			}</br></br>
+
+			.flat:hover {</br>
+			  background-color: #0c960c;</br>
+			  transition: background-color .15s, font-size .15s;</br>
+			  font-size: 18px;</br>
+			}</br></br>
+
+			.flat:active {</br>
+			  border-color: #fff;</br>
+			}</td>
+		 </tr>
+
+
+		</tbody>
+	</table>
+
+		<p>
+		*replace [ and ] with < and > when applicable
+		</p>
+
+		</section>
+
+	</div>
+
+<!--box shadow section-->
+
+	<div class="box-shadow" id="box-shadow">
+		<section>
+	<h1> Box shadow property </h1>
+	<h2>CSS styling </h2>
 
 	<table>
 		<thead>
@@ -887,63 +1168,167 @@ th, td {</br>
 		  <th>explanation</th>
 		 </tr>
 		</thead>
+
 		<tbody>
 
 		 <tr>
-		  <td>$ ls </td>
-		  <td>(LS) the terminal would display our current directory’s files and directories</td>
+		  <td> <p class="boxshadow1"> This is a box with shadow</p> </td>
+		  <td> box-shadow: 10px 10px; </td>
 		 </tr>
 
 		 <tr>
-		  <td>$ pwd </td>
-		  <td>Print working directory - show where you are in the file system</td>
+		  <td> <p class="boxshadow2"> This is a box with shadow with colour</p> </td>
+		  <td>   box-shadow: 10px 10px lightblue; </td>
 		 </tr>
 
 		 <tr>
-		  <td>$ cd </td>
-		  <td>Change directory</td>
+		  <td> <p class="boxshadow3"> This is a box with 5px blurred, lightblue box-shadow</p> </td>
+		  <td>   box-shadow: 10px 10px 5px lightblue; </td>
+		 </tr>
+
+
+		 <tr>
+		  <td> <p class="boxshadow4"> This is a box with blurred, light blue box-shadow with spread radius of 10px</p> </td>
+		  <td>   box-shadow: 10px 10px 5px 10px lightblue;</td>
 		 </tr>
 
 		 <tr>
-		  <td>$ cd ..</td>
-		  <td>the argument . . stands for the directory above the current working directory.</td>
+		  <td> The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow.
+			<p class="boxshadow5"> This is a box with blurred, light blue, inset box-shadow</p> </td>
+		  <td> box-shadow: 10px 10px 5px lightblue inset; </td>
 		 </tr>
 
 		 <tr>
-		  <td>$ cd ../..</td>
-		  <td>move the directory 2 path above</td>
+		  <td> Multiple shadow
+			<p class="boxshadow6"> This is a box with multiple shadow</p> </td>
+		  <td> box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; </td>
 		 </tr>
 
-		 <tr>
-		  <td>$ cd ../2014</td>
-		  <td>move to above, then to folder 2014</td>
-		 </tr>
 
-		 <tr>
-		  <td>$ mkdir media </td>
-		  <td>make directory / create new directory named media inside working directory</td>
-		 </tr>
-
-		 <tr>
-		  <td>$ touch keyboard.txt </td>
-		  <td>creates new file (in this case keyboard.txt) inside working directory</td>
-		 </tr>
 
 
 		</tbody>
 	</table>
 
+	<h2> Shadow can also be added to text with the property of text-shadow.</h2>
+
+		</section>
+
+	</div>
+
+<!--insert at header-->
+
+
+
+
+<!--breadcrumb section-->
+
+	<div class="breadcrumb" id="breadcrumb">
+		<section>
+	<h1> Breadcrumb </h1>
+			<ul class="breadcrumbs">
+			<li> <a href="#"> head </a> </li>
+			<li> <a href="#"> shoulders </a> </li>
+			<li> <a href="#"> knees </a> </li>
+			<li> <a href="#"> toes </a> </li>
+			</ul></br></br>
+
+		<p> Navigation link to show where you are in the webpage. It appears as above. </br></br>
+		Its code as below: </br></br>
+			<strong>HTML</strong></br></br>
+			[ul class="breadcrumbs"]</br>
+			[li][a href="link-here"]head[/a][/li]</br>
+			[li][a href="link-here"]shoulder[/a][/li]</br>
+			[li][a href="link-here"]knees[/a][/li]</br>
+			[li][a href="link-here"]toes[/a][/li]</br>
+			[/ul] </br></br>
+
+		*replace [ and ] with < and > when applicable</br></br>
+
+			<strong>CSS</strong></br></br>
+
+<b>/* remove any decoration of the list */</b></br>
+.breadcrumb li {</br>
+  float: left;</br>
+<b>  list-style: none; </b></br>
+}</br></br>
+
+<b>/* to decorate the link, use "a" element ADDLINK */</b></br>
+.breadcrumb a { </br>
+  color: #fff;</br>
+  background: #556B2F;</br>
+  text-decoration: none;</br>
+  position: relative;</br>
+  line-height: 30px;</br>
+  text-align: center;</br>
+  margin-right: 15px;</br>
+  padding: 7px 5px 8px 5px;</br>
+  font-family: Monospace;</br>
+  display: inline; <b>/* to make breadcrumbs appear in a line, use "display" property at "a" element*/</b></br>
+}</br></br>
+
+<b>/* "content" element is used to make the > arrow in between breadcrumb. Alternative can be ">" to display > or "/\00a0" to display / */ </b></br>
+.breadcrumb a::before,</br>
+.breadcrumb a::after {</br>
+<b>  content: ""; </b></br>
+  position: absolute;</br>
+  border-color: #556B2F;</br>
+  border-style: solid;</br>
+  border-width: 15px 5px;</br>
+}</br></br>
+
+<b>/* a::before and a::after refers to the space before and after the a element */</b></br>
+.breadcrumb a::before {</br>
+  left: -10px;</br>
+  border-left-color: transparent;</br>
+}</br></br>
+
+<b>/* Set border-left property to transparent to make the tail transparent */</b></br>
+.breadcrumb a::after {</br>
+  left: 100%;</br>
+<b>  border-color: transparent;</b></br>
+  border-left-color: #556B2F; </br>
+}</br></br>
+
+<b>/* to decorate link when hover, use pseudo class ADDLINK */</b></br>
+.breadcrumb a:hover { </br>
+  background-color: blue;</br>
+}</br></br>
+.breadcrumb a:hover::before {</br>
+  border-color: blue;</br>
+  border-left-color: transparent;</br>
+}</br></br>
+.breadcrumb a:hover::after {</br>
+  border-left-color: blue;</br>
+}</br></br>
+
+
+This section is a bit more complicated. Need to use CSS to experiment more.
+		</p>
+
+		<p>
+		Use breadcrumbs to indicate where a user is and the extent of the site</br>
+		Breadcrumbs are implemented using unordered lists in HTML with custom CSS styling</br>
+		Three types of breadcrumbs exist:</br>
+		
+		1. location - based on hierarchical structure of site</br>
+		2. Attribute - based on attributes of current page or item</br>
+		3. Path - unique to a users journey on the site</br>
+		Path-based breadcrumbs can be confusing, only use if needed</br>
+		Ensure breadcrumbs will add value before adding to a site</br>
+		</p>
 		</section>
 
 	</div>
 
 
 
+<!--FOOTER SECTION-->
 
 	<div class="footer">
-	<h3>made by banana, for banana</h3>
+	<h2><a href="stylesheet.html">Site stylesheet</a></h2>
+	<h2>made by banana, for banana.<a href="#"><img src="image/banana.jpeg"></a></h2>
 	</div>
-
 
 	</body>
 
